@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0px;
+}
+
+.header{
+    background-color: #212529;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    margin: 0 8px;
+    line-height: 80px;
+    font-size: 18px;
+    text-transform: lowercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+
+/* NO SE PORQUE NO FUNCIONA EL ACTIVE*/
+.nav-menu-link:hover,
+.nav-menu-link:active{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.nav-button{
+    color: #ffffff;
+    border: none;
+    background: none;
+    font-size: 30px;
+    padding: 0 30px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+/*Menu en mobile*/
+@media (max-width: 768px){
+    body{
+        padding-top: 70px;
+    }
+
+    .header{
+        height: 60px;
+    }
+
+    .nav-logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: darkblue;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 16px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-menu-item{
+        line-height: 70px;
+    }
+
+/* NO SE PORQUE NO FUNCIONA EL ACTIVE*/
+    .nav-menu-link:hover,
+    .nav-menu-link:active{
+        background: none;
+        color: darkorange;
+    }
+
+    .nav-button{
+        display: block;
+    }
+    
+    .nav-menu_visible{
+        left: 0;
+        transition: 0.3s;
+    }
+}
+
+/*agrega un margen a cada section para que no sea tapada por el menu*/
+section[id]{
+    scroll-margin-top: 80px;
+}
+
+.section{
+    background-color: cornflowerblue;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #212529;
+    color: #ffffff;
+}

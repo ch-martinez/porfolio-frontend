@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta id="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/porfolio-frontend/styles/styles.css">
     <title>Christian Martinez - Portfolio</title>
 </head>
 
@@ -14,12 +14,15 @@
     <header class="header">
         <nav class="nav">
             <a href="" class="nav-logo nav-link">LOGO</a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#about" class="nav-menu-link nav-link">Sobre mí</a></li>
-                <li class="nav-menu-item"><a href="#education" class="nav-menu-link nav-link">Educación</a></li>
-                <li class="nav-menu-item"><a href="#proyects" class="nav-menu-link nav-link">Proyectos</a></li>
-                <li class="nav-menu-item"><a href="#contact" class="nav-menu-link nav-link">Contacto</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Login</a></li>
+            <button class="nav-button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item"><a href="#about" class="nav-menu-link nav-link nav-menu-link_active">Sobre mí</a></li>
+                <li class="nav-menu-item"><a href="#education" class="nav-menu-link nav-link nav-menu-link_active">Educación</a></li>
+                <li class="nav-menu-item"><a href="#proyects" class="nav-menu-link nav-link nav-menu-link_active">Proyectos</a></li>
+                <li class="nav-menu-item"><a href="#contact" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -104,6 +107,8 @@
         </div>
     </footer>
 
+    <script defer src="/porfolio-frontend/scripts/nav-button.js"></script>
+    <script src="https://kit.fontawesome.com/cae722ac4a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
