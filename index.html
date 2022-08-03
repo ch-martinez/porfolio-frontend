@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta id="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/porfolio-frontend/styles/styles.css">
-    <title>Christian Martinez - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Martinez | Portfolio</title>
+    <link rel="stylesheet" href="styles/styles-2.css">
 </head>
-
 <body>
-
     <header class="header">
         <nav class="nav">
-            <div class="nav-logo"><h1>C<span>M</span></h1></div>
-            <button class="nav-button">
+            <div class="nav__logo"><span>Christian Martinez</span></div>
+            <button class="nav__button">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <ul class="nav-menu nav-menu_visible">
-                <li class="nav-menu-item"><a href="#about" class="nav-menu-link nav-menu-link_active">Sobre mí</a></li>
-                <li class="nav-menu-item"><a href="#education" class="nav-menu-link nav-menu-link_active">Educación</a></li>
-                <li class="nav-menu-item"><a href="#proyects" class="nav-menu-link nav-menu-link_active">Proyectos</a></li>
-                <li class="nav-menu-item"><a href="#contact" class="nav-menu-link nav-menu-link_active">Contacto</a></li>
-                <li class="nav-menu-item"><a href="#login_page" class="nav-menu-link nav-menu-link_active">Login</a></li>
+            <ul class="nav__menu nav__menu--visible">
+                <li class="nav__menu__item"><a href="#about" class="nav__menu__link nav__menu__link--active">Sobre mí</a></li>
+                <li class="nav__menu__item"><a href="#education" class="nav__menu__link nav__menu__link--active">Formación</a></li>
+                <li class="nav__menu__item"><a href="#proyects" class="nav__menu__link nav__menu__link--active">Proyectos</a></li>
+                <li class="nav__menu__item"><a href="#contact" class="nav__menu__link nav__menu__link--active">Contacto</a></li>
             </ul>
+            <a href="#" class="nav__menu__link--login">Login ></a>
         </nav>
     </header>
 
     <main class="main">
-        <section class="section about" id="about">
-            <div class="about-img">
-                <img class="about-profile" src="/porfolio-frontend/src/profile.jpg" alt="Foto de perfil">
+
+        <section class="section cover">
+            <div class="cover__profile">
+                <img src="src/profile.jpg" alt="Foto perfil">
             </div>
-            <div class="about-description">
+            <div class="cover__text">
+                <span>Christian Martinez</span>
+                <h1>Desarrollador web.</h1>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="about__profile">
+
+            </div>
+            <div class="about__description card">
                 <h1>Soy <span>Christian Martinez</span></h1>
                 <p>Estudiante en FaMAF de la Universidad Nacional de Córdoba y futuro desarrollador web</p>
                 <p>Una de mis experiencias en el área de desarrollo web y de aplicaciones, es que con cada línea de código, me esfuerzo por hacer de la web y la aplicación un lugar hermoso y con la mejor experiencia del usuario. Trabajar con un equipo multidisciplinario y bajo los enfoques de metodologías ágiles. Siempre estuve interesado en las diferentes tecnologías y los códigos.</p></br>
@@ -40,216 +48,125 @@
             </div>
         </section>
 
-        <section class="section" id="education">
-            <h1>Educación</h1>
-            <div>
-                <div><img src="none" alt=""></div>
-                <div>
-                    <h3>Lic. en ciencias de la computación (en curso)</h3>
-                    <p>Facultad de Matemática, Astronomía, Física y Computación (FaMAF) - Universidad Nacional de Córdoba</p>
+        <section class="section education" id="education">
+            <article class="education__item card">
+                <div class="education__header">
+                    <h2>Lic. en ciencias de la computación</h2>
+                    <div class="education__header__status education__header__status--encurso">
+                        <span>en curso</span>
+                    </div>
                 </div>
-            </div>
+                <p>Facultad de Matemática, Astronomía, Física y Computación (FaMAF) - Universidad Nacional de Córdoba</p>
+            </article>
 
-            <div>
-                <div><img src="none" alt=""></div>
-                <div>
-                    <h3>Universidad Python (en curso)</h3>
-                    <p>Udemy</p>
+            <article class="education__item card">
+                <div class="education__header">
+                    <h2>Universidad Python</h2>
+                    <div class="education__header__status education__header__status--encurso">
+                        <span>en curso</span>
+                    </div>
                 </div>
-            </div>
+                <p>Udemy</p>
+            </article>
 
-            <div>
-                <div><img src="none" alt=""></div>
-                <div>
-                    <h3>#YoProgramo (en curso)</h3>
-                    <p>Argentina Programa</p>
+            <article class="education__item card">
+                <div class="education__header">
+                    <h2>#YoProgramo</h2>
+                    <div class="education__header__status education__header__status--encurso">
+                        <span>en curso</span>
+                    </div>
                 </div>
-            </div>
+                <p>Argentina Programa - INTI</p>
+            </article>
 
-            <div>
-                <div><img src="none" alt=""></div>
-                <div>
-                    <h3>#SéProgramar (completo)</h3>
-                    <p>Argentina Programa</p>
+            <article class="education__item card">
+                <div class="education__header">
+                    <h2>#SéProgramar</h2>
+                    <div class="education__header__status education__header__status--completo">
+                        <span>completo</span>
+                    </div>
                 </div>
-            </div>
+                <p>Argentina Programa</p>
+            </article>
 
-            <div>
-                <div><img src="none" alt=""></div>
-                <div>
-                    <h3>Diseño de paginas web (completo)</h3>
-                    <p>Colegio de A.G.E.C. - CENMA n° 73</p>
+            <article class="education__item card">
+                <div class="education__header">
+                    <h2>Diseño de páginas web</h2>
+                    <div class="education__header__status education__header__status--completo">
+                        <span>completo</span>
+                    </div>
                 </div>
-            </div>
-
-            <div>
-                <div><img src="none" alt=""></div>
-                <div>
-                    <h3>Operador de PC (completo)</h3>
-                    <p>I.A.C.</p>
-                </div>
-            </div>
+                <p>Colegio de A.G.E.C. - CENMA n° 73</p>
+            </article>
 
         </section>
 
         <section class="section proyects" id="proyects">
-            <h1>Proyectos</h1>
-            <div class="container">
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <header class="header-card">
-                        <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
-                    </header>
-                    <footer class="footer-card">
-                        <h1>Titulo</h1><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis earum incidunt iure possimus qui soluta rerum numquam, magni, voluptatum dolorem harum porro fugit ab unde. Voluptatum atque impedit accusamus.</p><br>
-                        <a href="#">github</a>
-                    </footer>
-                </article>
-            </div>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
+            <article class="card card--proyects">proyect</article>
         </section>
 
         <section class="section contact" id="contact">
 
-
-
-            <div class="form-container">
-            <form class="form">
-                    <h2 class="form-title">Contáctame</h2>
-                    <input type="text" class="form-input" placeholder="Nombre">
-                    <input type="email" class="form-input" placeholder="Email">
-                    <textarea class="form-input form-input--message" placeholder="Mensaje"></textarea>
-
-                    <input type="submit" value="Enviar" class="form-submit">
-                </form>
+            <div>
+                <form class="contact__form card">
+                        <h2 class="contact__form__title">Contáctame</h2>
+                        <div class="contact__form__wrap">
+                            <label class="contact__form__label" for="name">Nombre:</label>
+                            <input type="text" class="contact__form__input" id="name">
+                        </div>
+                        <div class="contact__form__wrap">
+                            <label class="contact__form__label" for="email">Correo:</label>
+                            <input type="email" class="contact__form__input" id="email">
+                        </div>
+                        <div class="contact__form__wrap">
+                            <label class="contact__form__label"for="message">Mensaje:</label>
+                            <textarea class="contact__form__input contact__form__input--message" id="message"></textarea>
+                        </div>
+    
+                        <button class="button">Enviar</button>
+                    </form>
             </div>
 
 
-            <div class="contact-info">
-                <span>Córdoba, Argentina</span></br>
-                <div>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <a href="https://www.linkedin.com/in/chmartinez-cba/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:chmartinez.cba@gmail.com" target="_blank" rel="noopener noreferrer">Correo</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-github"></i>
-                    <a href="https://github.com/ch-martinez" target="_blank">GitHub</a>
-                </div>
+            <div class="contact__info__wrap">
+                <article class="contact_info__item card">
+                    <a href="https://github.com/ch-martinez" target="_blank"><i class="fa-brands fa-github"></i><br>GitHub</a>
+                </article>
+                <article class="contact_info__item card">
+                    <a href="https://www.linkedin.com/in/chmartinez-cba/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i><br>Linkedin</a>
+                </article>
+                <article class="contact_info__item card">
+                    <a href="mailto:chmartinez.cba@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i><br>Correo</a>
+                </article>
+                <article class="contact_info__item card">
+                    <a href="https://shorturl.at/fnv35"  target="_blank"><i class="fa-solid fa-location-dot"></i><br>Córdoba Capital<br>Argentina</a>                    
+                </article>
+            </div>
 
-        </div>
         </section>
+
     </main>
 
     <footer class="footer">
-        <div class="footer-div">
-            <span>Córdoba, Argentina | 2022 | Diseño Propio</span>
-        </div>
+        <span>2022 c. Todos los derechos reservados | Christian Martinez</span>
     </footer>
 
-    <script defer src="/porfolio-frontend/scripts/nav-button.js"></script>
+
     <script src="https://kit.fontawesome.com/cae722ac4a.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
