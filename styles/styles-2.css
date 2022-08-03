@@ -3,6 +3,13 @@
     --bg-card: #FFF;
     --font: #1D1D1F;
     --font-link: #006DDB;
+    --border: #e2e2e2;
+
+    --gradient-red: linear-gradient(50deg,#b94cdb,#e26092 52%,#fe815e);
+    --gradient-green: linear-gradient(225deg,#5af141,#2a9dce);
+    --gradient-blue: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    --gradient-yellow: linear-gradient( 135deg, #FFF886 10%, #F072B6 100%);
+    --gradient-black: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
 }
 
 * {
@@ -28,7 +35,8 @@ img{
 
 button{
     border: none;
-    background-color: var(--font-link);
+    /* background-color: var(--font-link); */
+    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
     padding: 12px 90px;
     border-radius: 12px;
     text-decoration: none;
@@ -48,7 +56,16 @@ button{
 }
 
 .footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__wrap{
     text-align: center;
+    border-top: 1px solid var(--border);
+    padding: 0.8rem 0;
+    color: #999;
+    width: 80vw;
 }
 
 .section{
@@ -58,6 +75,7 @@ button{
     min-height: 100vh;
     max-width: 1400px;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .card{
@@ -78,11 +96,16 @@ button{
     width: 100vw;
     padding: 0 28px;
     line-height: 50px;
-    border-bottom: 1px solid #e2e2e2;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav__logo{
+    min-width: 161px;
 }
 
 .nav__logo span{
-    font-size: 1.1em;
+    display: inline;
+    font-size: calc(1rem + 0.2vw);
     font-weight: 600;
 }
 
@@ -112,7 +135,7 @@ button{
 }
 
 .nav__menu__link--active{
-    color: #006DDB;
+    color: var(--font-link);
 }
 
 .nav__menu__link--login{
@@ -129,8 +152,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .cover__profile{
@@ -140,7 +162,9 @@ button{
 .cover__profile img{
     width: 300px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid var(--border);
+    box-shadow: 0 0 teal;
+    
 }
 
 .cover__text{
@@ -175,8 +199,13 @@ button{
 .education__header{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding-bottom: 15px;
+}
+
+.education__header h2{
+    margin-bottom: 0.4rem;
 }
 
 .education__header__status{
@@ -191,11 +220,13 @@ button{
 }
 
 .education__header__status--encurso{
-    background-image: linear-gradient(50deg,#b94cdb,#e26092 52%,#fe815e);
+    /* background-image: linear-gradient(50deg,#b94cdb,#e26092 52%,#fe815e); */
+    background-image: var(--gradient-red)
 }
 
 .education__header__status--completo{
-    background-image: linear-gradient(225deg,#5af141,#2a9dce);
+    /* background-image: linear-gradient(225deg,#5af141,#2a9dce); */
+    background-image: var(--gradient-green);
 }
 
 /* ====================================================================================================== */
@@ -210,7 +241,8 @@ button{
 
 .contact__container{
     width: 100%;
-    max-width: 480px;
+    max-width: 650px;
+    
 }
 
 .contact__form{
@@ -239,7 +271,6 @@ button{
 
 .contact__form__input{
     height: 48px;
-    max-width: 400px;
     padding: 0 18px;
     background-color: var(--bg);
     border: 2px solid hsla(0,0%,53.3%,.2);
@@ -258,7 +289,7 @@ button{
     grid-template-rows: auto auto;
     gap: 2rem;
     height: 580px;
-    width: 1000%;
+    width: 100%;
     max-width: 600px;
 }
 
@@ -269,7 +300,8 @@ button{
     justify-content: center;
     text-align: center;
     color: #FFF;
-    background-color: #006DDB;
+    border: none;
+    
  /*    width: 200px;
     height: 200px;
     max-height: 300px; */
@@ -285,6 +317,21 @@ button{
     color: inherit;
 }
 
+.contact_info__item:first-child{
+    background-image: var(--gradient-black);
+}
+
+.contact_info__item:nth-child(2){
+    background-image: var(--gradient-blue);
+}
+
+.contact_info__item:nth-child(3){
+    background-image: var(--gradient-yellow)
+}
+
+.contact_info__item:nth-child(4){
+    background-image: var(--gradient-red);
+}
 
 /* ====================================================================================================== */
 @font-face {
