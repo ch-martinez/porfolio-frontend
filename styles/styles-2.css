@@ -19,6 +19,7 @@ body{
     /* padding-top: 50px; */
     background-color: var(--bg);
     color: var(--font);
+    box-sizing: border-box;
 }
     
 img{
@@ -42,6 +43,12 @@ button{
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    padding: 28px;
+    
+}
+
+.footer{
+    text-align: center;
 }
 
 .section{
@@ -50,7 +57,7 @@ button{
     justify-content: center;
     min-height: 100vh;
     max-width: 1400px;
-    padding: 28px;
+    width: 100%;
 }
 
 .card{
@@ -140,14 +147,16 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    text-align: center;
 }
 
 .cover__text span{
-    font-size: 30px;
+    font-size: calc(1em + 1vw);
 }
 
 .cover__text h1{
-    font-size: 92px;
+    font-size: calc(1em + 7vw);
 }
 
 /* ====================================================================================================== */
@@ -196,13 +205,20 @@ button{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    width: 100%;
+}
+
+.contact__container{
+    width: 100%;
+    max-width: 480px;
 }
 
 .contact__form{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    height: 600px;
+    /* height: 600px; */
+    width: 100%;
 }
 
 .contact__form__title{
@@ -223,7 +239,7 @@ button{
 
 .contact__form__input{
     height: 48px;
-    width: 400px;
+    max-width: 400px;
     padding: 0 18px;
     background-color: var(--bg);
     border: 2px solid hsla(0,0%,53.3%,.2);
@@ -236,10 +252,14 @@ button{
 }
 
 .contact__info__wrap{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+/*     display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(45px,300px));
     gap: 2rem;
-    height: 600px;
+    width: 40vw; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 40vw;
 }
 
 .contact_info__item{
@@ -250,6 +270,9 @@ button{
     text-align: center;
     color: #FFF;
     background-color: #006DDB;
+    width: 200px;
+    height: 200px;
+    max-height: 300px;
 }
 
 .contact_info__item i{
@@ -294,10 +317,14 @@ button{
 }
 
 .proyects{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    gap: 3rem;
-    grid-area: auto;
+/*     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 3rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .card--proyects{
@@ -305,4 +332,6 @@ button{
     color: #FFF;
     text-transform: uppercase;
     text-align: center;
+    width: 100%;
+    min-width: 500px;
 }
