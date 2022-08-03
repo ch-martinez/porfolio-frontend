@@ -14,6 +14,15 @@ Lavender #6C648B
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+html { font-family: 'Inter', sans-serif; }
+
+
+:root{
+    --bg: #F5F5F7;
+    --bg-card: #FFF;
+    --font: #1D1D1F;
+    --font-link: #006DDB;
+}
 
 *{
     margin: 0;
@@ -21,10 +30,11 @@ Lavender #6C648B
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
 /*     padding: 90px 20px 0px; */
     margin: 0;
     margin-top: 30px;
+    background-color: var(--bg);
+    color: var(--font);
 }
 
 img{
@@ -167,6 +177,7 @@ section[id]{
 }
 
 .section{
+    width: 100%;
     min-height: 100vh;
     margin-bottom: 3rem;
     /* max-width: 1400px; */
@@ -272,9 +283,11 @@ section[id]{
     gap: 1em;
     grid-auto-columns: 100%;
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    height: 450px;
     max-width: 400px;
     max-height: 600px;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 1em;
 }
 
@@ -295,9 +308,41 @@ section[id]{
 }
 
 .contact-info{
-    background-color: antiquewhite;
-    height: 600px;
+    border: 1px solid hsla(0,0%,51.4%,.16);
+border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    
     width: 500px;
+    max-height: 450px;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.contact-info h2{
+
+
+}
+
+.contact-info-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.contact-info-item{
+    text-align: center;
+}
+
+.contact-info-item a{
+    text-decoration: none;
+}
+
+.contact-info i{
+    font-size: 2.8rem;
 }
 
 /* 
@@ -308,3 +353,33 @@ section[id]{
     background-color: #212529;
     color: #ffffff;
 }
+
+
+@font-face {
+    font-family: 'Ibm plex mono';
+    src: url('https://assets.website-files.com/605739cf94ca6b3bfeae0833/61002974f9938d1a4a04f9d6_ibm-plex-mono-v6-latin-500.woff2') format('woff2'), url('https://assets.website-files.com/605739cf94ca6b3bfeae0833/61002974d552893694d0c411_ibm-plex-mono-v6-latin-500.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('https://assets.website-files.com/605739cf94ca6b3bfeae0833/610e5a81f7ff773290bd827c_inter-v3-latin-600.woff2') format('woff2'), url('https://assets.website-files.com/605739cf94ca6b3bfeae0833/610e5a8135ff85ed15e0129d_inter-v3-latin-600.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('https://assets.website-files.com/605739cf94ca6b3bfeae0833/610e5a817de9014cc3b59443_inter-v3-latin-500.woff2') format('woff2'), url('https://assets.website-files.com/605739cf94ca6b3bfeae0833/610e5a808461e57b774188fe_inter-v3-latin-500.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('https://assets.website-files.com/605739cf94ca6b3bfeae0833/610e5a810625e1731fb8af32_inter-v3-latin-regular.woff2') format('woff2'), url('https://assets.website-files.com/605739cf94ca6b3bfeae0833/610e5a8135ff85176ee0129e_inter-v3-latin-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
