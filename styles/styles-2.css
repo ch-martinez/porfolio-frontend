@@ -252,14 +252,14 @@ button{
 }
 
 .contact__info__wrap{
-/*     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(45px,300px));
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
     gap: 2rem;
-    width: 40vw; */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 40vw;
+    height: 580px;
+    width: 1000%;
+    max-width: 600px;
 }
 
 .contact_info__item{
@@ -270,9 +270,9 @@ button{
     text-align: center;
     color: #FFF;
     background-color: #006DDB;
-    width: 200px;
+ /*    width: 200px;
     height: 200px;
-    max-height: 300px;
+    max-height: 300px; */
 }
 
 .contact_info__item i{
@@ -325,6 +325,7 @@ button{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    gap: 2rem;
 }
 
 .card--proyects{
@@ -333,5 +334,7 @@ button{
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    min-width: 500px;
+    max-width: 400px;
+    height: 250px;
+    max-height: 400px;
 }
