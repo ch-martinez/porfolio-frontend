@@ -35,13 +35,10 @@ img{
 
 button{
     border: none;
-    /* background-color: var(--font-link); */
-    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
     padding: 12px 90px;
     border-radius: 12px;
     text-decoration: none;
     font-size: 18px;
-    color: #FFF;
     font-weight: 500;
     cursor: pointer;
 }
@@ -50,9 +47,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    padding: 12px;
-    
+    width: 100vw;    
 }
 
 .footer{
@@ -73,7 +68,7 @@ button{
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    max-width: 1400px;
+    max-width: 1600px;
     width: 100%;
     margin-bottom: 2rem;
 }
@@ -81,7 +76,7 @@ button{
 .card{
     background-color: var(--bg-card);
     border: 1.2px solid hsla(0,0%,51.4%,.16);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 40px;
 }
 
@@ -97,6 +92,7 @@ button{
     padding: 0 28px;
     line-height: 50px;
     border-bottom: 1px solid var(--border);
+    z-index: 10;
 }
 
 .nav__logo{
@@ -152,19 +148,54 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    background-color: #FFF;
+    max-width: 100vw;
 }
 
 .cover__profile{
     margin-bottom: 4rem;
+    position: relative;
+    width: 45vh;
+    min-width: 300px;
+    height: 45vh;
+    min-height: 300px;
 }
 
-.cover__profile img{
-    width: 300px;
+.cover__profile--bg-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    border: 3px solid var(--border);
-    box-shadow: 0 0 teal;
-    
+    padding: 20%;
+    background-image: radial-gradient(circle farthest-side at 100% 100%,#9873ff,rgba(152,115,255,0)),
+                      radial-gradient(circle farthest-side at 100% 0,#0ba5f7,rgba(85,196,255,0)),
+                      radial-gradient(circle farthest-side at 0 0,#ff763c,rgba(255,176,60,0)),
+                      radial-gradient(circle farthest-side at 0 100%,#ff5aaa,rgba(255,90,170,0));
+}
+
+.cover__profile--bg-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+}
+
+.cover__profile--img-container{
+    position: absolute;
+    padding: 10px;
+    background-color: hsla(0,0%,84%,.5);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+}
+
+.cover__profile--img-container img{
+    top 0;
+    left: 0;
+    border-radius: 50%;
 }
 
 .cover__text{
@@ -185,6 +216,59 @@ button{
 
 /* ====================================================================================================== */
 
+.about{
+    gap: 2rem;
+}
+
+.about__description{
+    display: flex;
+    margin: 10rem 0;
+}
+
+.contact_info__item{
+    flex-shrink: 5;
+}
+
+.contact_info__item--button{
+    background: none;
+    color: #FFF;
+}
+
+.about__description--text{
+    font-size: 1.4rem;
+    margin-right: 10rem;
+}
+
+.about__description--text h1{
+    margin-bottom: 2rem;
+}
+
+.about__tecnologies{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.about__title{
+    font-size: calc(1em + 1vw);
+    margin-left: 3rem;
+    font-weight: 600;
+}
+
+.about__tecnologies__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about__tecnologies__item strong{
+    font-size: 2rem;
+}
+
+/* ====================================================================================================== */
+
 .education{
 
 }
@@ -194,6 +278,7 @@ button{
     max-width: 1400px;
     padding: 2rem;
     margin-bottom: 20px;
+    align-self: center;
 }
 
 .education__header{
@@ -231,6 +316,58 @@ button{
 
 /* ====================================================================================================== */
 
+
+.proyects{
+/*     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 3rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.card--proyects{
+    background-color: var(--font);
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.card__text:hover {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__text h2, .card__text p{
+    display: none;
+}
+
+.card__text:hover h2{
+    display: inline;
+}
+
+
+.card--proyects img{
+    min-width: 120%;    
+}
+
+.card--proyects:hover img{
+
+    filter: grayscale(100%) blur(10px);    
+    transition: 0.2s;
+}
+
+/* ====================================================================================================== */
+
 .contact{
     flex-direction: row;
     align-items: center;
@@ -242,7 +379,6 @@ button{
 .contact__container{
     width: 100%;
     max-width: 650px;
-    
 }
 
 .contact__form{
@@ -281,6 +417,11 @@ button{
 .contact__form__input--message{
     resize: none;
     height: 130px;
+}
+
+.contact__form button{
+    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    color: #FFF;
 }
 
 .contact__info__wrap{
@@ -362,55 +503,4 @@ button{
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
-
-.proyects{
-/*     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    gap: 3rem; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-}
-
-.card--proyects{
-    background-color: var(--font);
-    color: #FFF;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    height: 250px;
-    max-height: 400px;
-}
-
-.about{
-    gap: 2rem;
-}
-
-.about__tecnologies{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.about__title{
-    font-size: calc(1em + 1vw);
-    margin-left: 3rem;
-    font-weight: 600;
-}
-
-.about__tecnologies__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.about__tecnologies__item strong{
-    font-size: 2rem;
 }
