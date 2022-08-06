@@ -28,22 +28,35 @@
     <main class="main">
 
         <section class="section cover">
+
             <div class="cover__profile">
-                <img src="src/profile.jpg" alt="Foto perfil">
+                <div class="cover__profile--bg-1">
+                        <div class="cover__profile--bg-1"></div>
+                </div>
+                <div class="cover__profile--img-container">
+                    <img src="src/profile.jpg" alt="Foto perfil">
+                </div>
             </div>
             <div class="cover__text">
                 <span>Christian Martinez</span>
                 <h1>Desarrollador web.</h1>
             </div>
+
         </section>
 
         <section class="section about" id="about">
 
-            <div class="about__description card">
-                <h1>Soy <span>Christian Martinez</span></h1>
-                <p>Estudiante en FaMAF de la Universidad Nacional de Córdoba y futuro desarrollador web</p>
-                <p>Una de mis experiencias en el área de desarrollo web y de aplicaciones, es que con cada línea de código, me esfuerzo por hacer de la web y la aplicación un lugar hermoso y con la mejor experiencia del usuario. Trabajar con un equipo multidisciplinario y bajo los enfoques de metodologías ágiles. Siempre estuve interesado en las diferentes tecnologías y los códigos.</p></br>
-                <button download href="#">Descargar CV</button>
+            <div class="about__description">
+                <div class="about__description--text">
+                    <h1>Hola! me llamo Christian Martinez, soy studiante en FaMAF de la Universidad Nacional de Córdoba y futuro desarrollador web</h1>
+                    <p></p>
+                    <p>Una de mis experiencias en el área de desarrollo web y de aplicaciones, es que con cada línea de código, me esfuerzo por hacer de la web y la aplicación un lugar hermoso y con la mejor experiencia del usuario. Trabajar con un equipo multidisciplinario y bajo los enfoques de metodologías ágiles. Siempre estuve interesado en las diferentes tecnologías y los códigos.</p></br>
+                </div>
+                
+                <article class="contact_info__item card">
+                    <button class="contact_info__item--button" download href="#"><i class="fa-solid fa-file"></i></br>Descargar CV</button>
+                    <!-- <a href="https://github.com/ch-martinez" target="_blank"><i class="fa-brands fa-github"></i><br>GitHub</a> -->
+                </article>
             </div>
 
             <div class="about__title">
@@ -145,22 +158,27 @@
         </section>
 
         <section class="section proyects" id="proyects">
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
-            <article class="card card--proyects">proyect</article>
+            <a href="#" class="card card--proyects">
+                <div class="card__text">
+                    <h2>CRUD</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit id laboriosam, in error recusandae tenetur, repudiandae molestiae sunt perspiciatis inventore laudantium quis fuga quod ad tempora ea obcaecati expedita sapiente.</p>
+                </div>
+                <img src="/porfolio-frontend/src/proyects/wallpaperflare.com_wallpaper (21).jpg" alt="">
+            </a>
+            <a href="#"  class="card card--proyects">
+                <div class="card__text">
+                    <h2>SysAdmin</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit id laboriosam, in error recusandae tenetur, repudiandae molestiae sunt perspiciatis inventore laudantium quis fuga quod ad tempora ea obcaecati expedita sapiente.</p>
+                </div>
+                <img src="/porfolio-frontend/src/proyects/wallpaperflare.com_wallpaper (22).jpg" alt="">
+            </a>
+            <a href="#"  class="card card--proyects">
+                <div class="card__text">
+                    <h2>Udemy Academy</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit id laboriosam, in error recusandae tenetur, repudiandae molestiae sunt perspiciatis inventore laudantium quis fuga quod ad tempora ea obcaecati expedita sapiente.</p>
+                </div>
+                <img src="/porfolio-frontend/src/proyects/udemy.jpg" alt="">
+            </a>
         </section>
 
         <section class="section contact" id="contact">
