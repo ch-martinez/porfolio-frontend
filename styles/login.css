@@ -1,0 +1,15 @@
+.main__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;   
+}
+
+.contact__container--login{
+    max-width: 500px;
+}
+
+.form__footer{
+    align-self: center;
+}

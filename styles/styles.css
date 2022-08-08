@@ -134,36 +134,71 @@ a, a:visited{
 
 .nav__menu__item{
     list-style: none;
-
 }
 
 .nav__menu__link,
 .nav__menu__link:visited,
 .nav__menu__link--login{
-    text-decoration: none;
     color: var(--font);
     padding: 5px 10px;
     border-radius: 6px;
     transition: all 200ms ease-out;
 }
 
-.nav__menu__link--active{
-    color: var(--font-link);
-}
-
-.nav__menu__link--login{
+.nav__menu__item--login{
     color: var(--font-link);
 }
 
 .nav__menu__link:hover{
-    background-color: rgba(214, 214, 214, 0.39);
+    background-color: rgba(114, 114, 114, 0.39);
     transition: all 200ms ease-out;
-
 }
 
 .nav__button{
     display: none;
 }
+
+
+@media (max-width: 800px){
+    .nav__logo{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .nav__button{
+        display: inline;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .header{
+        padding: 0;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    
+    .nav__menu{
+        background-color: hsla(0,0%,100%,.7);
+        backdrop-filter: saturate(180%) blur(20px);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__menu--visible{
+        display: none;
+    }
+
+    .nav__menu__item{
+        margin: 2rem;
+        font-size: larger;
+        font-weight: 600;
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+
+
 
 /* ====================================================================================================== */
 
@@ -240,19 +275,19 @@ a, a:visited{
 /* ====================================================================================================== */
 
 .about{
-    gap: 2rem;
+    
 }
 
 .about__description{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(700px,1fr));
+    /* margin: 10rem 0; */
 }
 
 .about__description--text{
     font-size: 1.4rem;
     margin-right: 4rem;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 .about__description--text h1{
@@ -264,7 +299,6 @@ a, a:visited{
 }    
 
 .contact_info__item--button{
-    flex-grow: 2;
     padding: 5rem;
     color: #FFF;
     background-color: #1D1D1F;
@@ -467,7 +501,8 @@ a, a:visited{
 
 }
 
-.contact__form__input:hover{
+.contact__form__input:hover, .contact__form__input:focus{
+    outline: none;
     border: #006fff 0.2em solid;
 }
 
