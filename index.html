@@ -11,16 +11,17 @@
     <header class="header">
         <nav class="nav">
             <div class="nav__logo">
-                <a href="http://127.0.0.1:5500/porfolio-frontend/index.html"><span>Christian Martinez</span></div></a>                
-            <button class="nav__button">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+                <a href="/index.html"><span>Christian Martinez</span></a>
+                <button class="nav__button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
             <ul class="nav__menu nav__menu--visible">
                 <li class="nav__menu__item"><a href="#about" class="nav__menu__link nav__menu__link--active">Sobre mí</a></li>
                 <li class="nav__menu__item"><a href="#education" class="nav__menu__link nav__menu__link--active">Formación</a></li>
                 <li class="nav__menu__item"><a href="#proyects" class="nav__menu__link nav__menu__link--active">Proyectos</a></li>
                 <li class="nav__menu__item"><a href="#contact" class="nav__menu__link nav__menu__link--active">Contacto</a></li>
-                <li class="nav__menu__item"><a href="#" class="nav__menu__link--login">Login ></a></li>
+                <li class="nav__menu__item nav__menu__item--login"><a href="login.html" class="nav__menu__link--login">Login</a></li>
             </ul>
             
         </nav>
@@ -51,20 +52,12 @@
                 <div class="about__description--text">
                     <span>Hello word!</span>
                     <h1>Hola! me llamo Christian Martinez, soy studiante en FaMAF de la Universidad Nacional de Córdoba y futuro desarrollador web</h1>
-                    <p></p>
                     <p>Una de mis experiencias en el área de desarrollo web y de aplicaciones, es que con cada línea de código, me esfuerzo por hacer de la web y la aplicación un lugar hermoso y con la mejor experiencia del usuario. Trabajar con un equipo multidisciplinario y bajo los enfoques de metodologías ágiles. Siempre estuve interesado en las diferentes tecnologías y los códigos.</p></br>
                 </div>
-                
-
-                    <button class="contact_info__item--button card" download href="#"><i class="fa-solid fa-file"></i></br>Descargar CV</button>
-                    <!-- <a href="https://github.com/ch-martinez" target="_blank"><i class="fa-brands fa-github"></i><br>GitHub</a> -->
-
+                <button class="contact_info__item--button card" download href="#"><i class="fa-solid fa-file"></i></br>Descargar CV</button>
             </div>
 
-            <div class="about__title">
-                Tecnologías dominadas
-            </div>
-
+            <div class="about__title">Tecnologías dominadas</div>
             <div class="about__tecnologies">
                 <article class="about__tecnologies__item card">
                     <img src="src/education/icons8-html-5.svg" alt="">
@@ -348,7 +341,7 @@
     </footer>
 
 <!-- Scripts -->
-
+    <script src="scripts/nav-button.js"></script>
     <script src="https://kit.fontawesome.com/cae722ac4a.js" crossorigin="anonymous"></script>
 </body>
 </html>
