@@ -1,5 +1,5 @@
-.main__contact{
-    background-color: #ccc;
+.main{
+    background-color: rgb(231, 231, 231);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,15 +7,36 @@
     height: 100vh;   
 }
 
-.contact__container--login{
-    max-width: 800px;
-    padding: 6rem;
+.container__form--login{
+    max-width: 700px;
+    padding: 2rem 4rem;
 }
 
-.contact__form__title, .form__footer{
+.form__title, .form__footer{
     align-self: center;
 }
 
-.form__button, .contact__form__title{
-    margin-bottom: 50px;
+.button--login, .form__title{
+    margin-bottom: 40px;
+}
+
+.form__footer{
+    
+}
+
+@media screen and (max-width: 800px){
+        .container__form--login{
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+    }
+    
+    .form__title, .form__footer{
+        align-self: center;
+    }
+    
+    .button--login, .form__title{
+        margin-bottom: 90px;
+    }
+
 }
