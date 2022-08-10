@@ -11,4 +11,5 @@ navButton.addEventListener("click", () =>{
 //Hace que se cierre el menu al hacer click
 document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",() => {
     navMenu.classList.remove("nav__menu--visible");
+    header.classList.remove("header--mobile");
 }))
