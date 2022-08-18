@@ -11,30 +11,31 @@
 <body>
     <main class="main">
         <div class="container__form container__form--login card">
-            <form action="index.html" class="form">
-                <h2 class="form__title">Iniciar sessión</h2>
-
+            <form action="/index.html" class="form">
+                <h2 class="form__title">Registrar nuevo usuario</h2>
+                <div class="form__item">
+                    <label for="email" class="form__label">Correo: </label>
+                    <input type="email" class="form__input" id="email" required>
+                </div>
+                
                 <div class="form__item">
                     <label for="user" class="form__label">Usuario:</label>
                     <input type="text" class="form__input" id="user" required>
                 </div>
-
+                
                 <div class="form__item">
                     <label for="pass" class="form__label">Contraseña:</label>
-                    <input type="password" class="form__input" id="pass" required>
+                    <input type="password" class="form__input" id="pass" required>                
                 </div>
-                
-                <button class="button button--form button--login">Login</button>
 
-                <div class="form__footer">
-                    <a href="/register.html">Registrarse</a>
-                    <span>|</span>
-                    <a href="/recover_pass.html">Recuperar contraseña</a>
+                <div class="form__item">
+                    <label for="pass--rep" class="form__label">Repetir Contraseña:</label>
+                    <input type="password" class="form__input" id="pass--rep" required>                
                 </div>
+
+                <button class="button button--form button--login">Registrar</button>
 
             </form>
         </div>
-
     </main>
 </body>
-</html>

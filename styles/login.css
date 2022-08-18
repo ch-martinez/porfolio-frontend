@@ -16,12 +16,12 @@
     align-self: center;
 }
 
-.button--login, .form__title{
-    margin-bottom: 40px;
+.form__title{
+    margin-bottom: 30px;
 }
 
-.form__footer{
-    
+.button--login{
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 800px){
